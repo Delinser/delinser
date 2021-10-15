@@ -1,0 +1,25 @@
+hi.main {
+    font-family: fantasy;
+}
+table{
+    border-color: dimgray;
+  
+    background-color: red;
+}
+p{
+    color:blueviolet;
+    font-style: italic;
+    text-shadow: #78f73e 1px 1px 0, #7de727 2px 2px 0, 
+                 #45fa3e 3px 3px 0, #97f32d 4px 4px 0, 
+                 #7ae94e 5px 5px 0;
+                 
+}
+p:hover {
+                    text-shadow: 
+                    black 1px 1px 0, 
+                    black 2px 2px 0, 
+                    black 3px 3px 0, 
+                    black 4px 4px 0, 
+                    black 5px 5px 0;
+                     
+                  }
