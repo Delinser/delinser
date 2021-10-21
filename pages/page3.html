@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Табличная Верстка</title>
@@ -14,13 +15,13 @@
                 <h1 class="main" >Подвал</h1>
            </td>   
            <td  width="150">
-            <input autocomplete="email" name="Login" type="email" placeholder="Login"   >
+            <input  style="background-color: #009900; border-color: purple;" autocomplete="email" name="Login" type="email" placeholder="Login"   >
            </td>
        </tr>
         <tr>
             <td>
-            <input autocomplete="current-password" name="Password" type="password" placeholder="Password"
-            </td>
+            <input style="background-color: #009900 ;border-color: purple;" autocomplete="current-password" name="Password" type="password" placeholder="Password"
+            </td> 
             
 
         </tr>
@@ -43,38 +44,49 @@
                 </td>
                 <td>
                     <p>
-                        Использование таблиц с невидимой границей — 
-                        известный способ верстки, применяемый на
-                         множестве сайтов. 
-                        Такая таблица фактически представляет собой 
-                        модульную сетку, в которой удобно размещать 
-                        отдельные элементы веб-страницы. 
-                        Простота и быстрота верстки, а также
-                         корректное отображение в различных браузерах 
-                         — вот основные преимущества табличной верстки.
+                        CSS - это язык оформления HTML-документов. За более подробной информацией 
+                        <a href="https://ru.wikipedia.org/wiki/CSS">сюда</a>. Так как он является вспомогательным
+                        языком, то сущестует несколько основных способов его добавления на web-страницу:
+                        <ul>
+                            <li>Внешний
+                                <span>
+                                    &lt;link rel="stylesheet" href="style.css">
+                                </span>
+                            </li>
+                            <li>Внутренний глобальный
+                                <span>
+                                    &lt;style>&lt;/style>
+                                </span>
+                            </li>
+                            <li>Внутренний локальный
+                                <span>
+                                    &lt;span style="color: red">&lt;/span>
+                                </span>
+                            </li>
+                        </ul>
                     </p>
                     <p>
-                        Благодаря универсальности таблиц и
-                         большому числу параметров, управляющих их видом, 
-                        таблицы надолго стали определенным 
-                        стандартом для верстки веб-страниц. 
-                        Таблица с невидимой границей предс
-                        тавляет собой словно модульную сетку, 
-                        в блоках которой удобно размещать
-                         элементы веб-страницы. 
-                        Тем не менее это не совсем правильный подход, 
-                        ведь каждый объект HTML определен д
-                        ля своих собственных целей и если он 
-                        используется не по назначению, 
-                        причем повсеместно, это значит, что 
-                        альтернатив нет. Так оно и было долгое время, 
-                        пока на смену таблицам при верстке 
-                        сайтов не пришли слои. Это не значит, 
-                        что слои теперь используются сп
-                        лошь и рядом, но наметилась четкая тенденция — 
-                        таблицы применяются для размеще
-                        ния табличных данных, а слои — для
-                         верстки и оформления.
+                        Синтаксис языка выглядит следующим образом: 
+                        сначала указывается изменяемый элемент с помощью 
+                        <span style="color: red;">селектора</span>, после этого 
+                        в фигурных скобках перечисляются через точку с запятой
+                        изменяемые свойства элемента  (<span style="color: palevioletred;">цвет, размер, расположение и т.д.</span>),
+                        затем напротив каждого свойства указывается значение 
+                        (<span style="color: blue;">red, left, 1px и т.д.</span>). Например: <br>
+                        <pre>
+                            <span style="color: red;">table</span>  {
+                                <span style="color: palevioletred;">width</span>: <span style="color: blue;">80%</span>;
+                                <span style="color: palevioletred;">border-color</span>: <span style="color: blue;">white</span>;
+                                <span style="color: palevioletred;">border-style</span>: <span style="color: blue;">groove</span>;
+                                <span style="color: palevioletred;">border-width</span>: <span style="color: blue;">5px</span>;
+                            }
+                        </pre>
+                        В ситуации когда изменить необходимо только некоторые 
+                        элементы, следует пользоваться указателями класса: 
+                        когда одни и теже теги принадлежат разным классам и
+                        оформляются по разному. <br>
+                        &lt;table class="header">&lt;/table> <br>
+                        &lt;table class="main">&lt;/table>
                     </p>
                 </td>
             </tr>
@@ -96,7 +108,7 @@
                             <p>
                                 Ученик 10 класса УнШ ВДФУ г. 
                                 Владивостока. Сайты-визитки от 1 тыс
-                                . рублей. Кабинет №
+                                . рублей. Кабинет №404
 
                             </p>
                         </td>
