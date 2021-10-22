@@ -1,0 +1,51 @@
+body{
+    
+    background-color: burlywood;
+}
+nav {
+    align-items: center;
+    nav-index: auto;
+    width: 60%;
+    height: 40;
+    border: 1;;
+    border-color: cyan;
+    border-style: outset;
+}
+header{
+    width: 60%;
+    height: 130;
+    border: 1; 
+    border-color: darkblue;
+    border-style: outset;
+}
+main{
+    width: 60%;
+    height: 50%;
+    border: 1; 
+    border-color: darkblue;
+    border-style: outset;
+}
+footer
+{
+    width: 60%;
+    height: 50;
+    border: 1;
+    border-color: firebrick;
+    border-style: outset;
+}
+p.h1{
+    font-weight: bolder;
+    text-align: center;
+ font-size:200%;
+}
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%
+}
+.gg
+{
+    float: left; 
+    margin-top: auto ;
+    margin-bottom: auto ;
+}
